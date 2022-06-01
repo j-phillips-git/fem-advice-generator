@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Advice Generator</title>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <!-- EXTERNAL STYLES -->
+  <link rel="stylesheet" href="main.css">
+  <!-- EXTERNAL JS -->
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <main>
+    <h4 class="advice-id">Advice #
+      <span id="adviceId">
+        117
+      </span>
+    </h4>
+
+    <h1 class="advice">
+      "<span id="adviceText">
+        It is easy to sit up and take notice, what's difficult is getting up and taking action.
+      </span>"
+    </h1>
+
+    <img class="mobile-divider" src="./images/pattern-divider-mobile.svg" alt="horizontal line divider">
+    <img class="desktop-divider" src="./images/pattern-divider-desktop.svg" alt="horizontal line divider">
+
+    <button id="btn" class="dice-wrapper" onclick="getAdvice();">
+      <img src="./images/icon-dice.svg" alt="green circle with one die inside">
+    </button>
+  </main>
+</body>
+
+</html>

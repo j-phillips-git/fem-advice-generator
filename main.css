@@ -1,0 +1,118 @@
+:root {
+  --clr-body-bg: #202733;
+  --clr-card-bg: #313a48;
+  --clr-text: #cee3e9;
+  --clr-neon-green: #53ffaa;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--clr-body-bg);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--clr-card-bg);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 96%;
+  height: 315px;
+  max-width: 540px;
+  min-width: 200px;
+  padding: 40px 24px 0 24px;
+  -webkit-box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+          box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  border-radius: 10px;
+}
+
+.advice-id {
+  color: var(--clr-neon-green);
+  font-size: clamp(0.6875rem, 2vw, 0.8125rem);
+  letter-spacing: 3.45px;
+  margin-bottom: 24px;
+}
+
+.advice {
+  color: var(--clr-text);
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  line-height: 33px;
+  letter-spacing: -0.25px;
+}
+
+.mobile-divider {
+  width: 94.6%;
+  max-width: 295px;
+  margin: 27px auto;
+}
+
+.desktop-divider {
+  display: none;
+}
+
+.dice-wrapper {
+  position: absolute;
+  bottom: 18px;
+  background-color: var(--clr-neon-green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-self: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: -50px;
+  border-radius: 50%;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.dice-wrapper:hover {
+  -webkit-box-shadow: 0px 0px 40px #53ffaa;
+          box-shadow: 0px 0px 40px #53ffaa;
+}
+
+.dice-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    height: 332px;
+    padding: 48px 48px 0 48px;
+  }
+  .mobile-divider {
+    display: none;
+  }
+  .desktop-divider {
+    display: block;
+    margin: 47px 0;
+  }
+}
+
